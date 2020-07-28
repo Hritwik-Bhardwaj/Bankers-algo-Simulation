@@ -27,10 +27,10 @@ then the system is said to be in a safe state</br>
 
 
 **TOOLS & DATA SOURCES -**
-    - IDE (Integrated Development Environment) - Visual Studio Code is a free source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Users can change the theme, keyboard shortcuts, preferences, and install extensions that add additional functionality
-    - Programming Language - HTML ,CSS ,JavaScript
-    - Data Source - Wikipedia , W3school
-    - Platform – Firefox </br>
+    * IDE (Integrated Development Environment) - Visual Studio Code is a free source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Users can change the theme, keyboard shortcuts, preferences, and install extensions that add additional functionality 
+    * Programming Language - HTML ,CSS ,JavaScript 
+    * Data Source - Wikipedia , W3school 
+    * Platform – Firefox </br>
 contributors - 
 - Shivam Sharma - 185004
 - Vikrant Bhardwaj - 185007
