@@ -14,23 +14,23 @@ It includes three steps:
 After the allocation of resources, the new state formed may or may not be a safe state. So, the safety algorithm is applied to check whether the resulting state is a safe state or not. </br>
 
 **Safe state:** A safe state is a state in which all the processes can be executed in some arbitrary order with the available resources such that no deadlock occurs.
-    1.. If it is a safe state, then the requested resources are allocated to the process in actual.
-    2.. If the resulting state is an unsafe state then it rollbacks to the previous state and the process is asked to wait longer.</br>
+    1. If it is a safe state, then the requested resources are allocated to the process in actual.
+    2. If the resulting state is an unsafe state then it rollbacks to the previous state and the process is asked to wait longer.</br>
 **Safety Algorithm**
 The safety algorithm is applied to check whether a state is in a safe state or not.
 This algorithm involves the following four steps:
     1. Suppose currently all the processes are to be executed. Define two data structures as Work and Finish as vectors of length m(where m is the length of Available vector)and n(is the number of processes to be executed).
     2. This algorithm will look for a process that has Need value less than or equal to the Work. So, in this step, we will find an index i such that If no such ‘i’ is present then go to step 4 else to step 3.
-    3.. The process 'i' selected in the above step runs and finishes its execution. Also, the resources allocated to it gets free. The resources which get free are added to the Work and Finish(i) of the process is set as true. The following operations are performedAfter performing the 3rd step go to step 2.
+    3. The process 'i' selected in the above step runs and finishes its execution. Also, the resources allocated to it gets free. The resources which get free are added to the Work and Finish(i) of the process is set as true. The following operations are performedAfter performing the 3rd step go to step 2.
     4. If all the processes are executed in some sequence then it is said to be a safe state. Or, we can say that ifFinish[i]==true for all i,
 then the system is said to be in a safe state</br>
 
 
 **TOOLS & DATA SOURCES -**
-    - • IDE (Integrated Development Environment) - Visual Studio Code is a free source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Users can change the theme, keyboard shortcuts, preferences, and install extensions that add additional functionality
-    - • Programming Language - HTML ,CSS ,JavaScript
-    - • Data Source - Wikipedia , W3school
-    - • Platform – Firefox </br>
+    - IDE (Integrated Development Environment) - Visual Studio Code is a free source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Users can change the theme, keyboard shortcuts, preferences, and install extensions that add additional functionality
+    - Programming Language - HTML ,CSS ,JavaScript
+    - Data Source - Wikipedia , W3school
+    - Platform – Firefox </br>
 contributors - 
 - Shivam Sharma - 185004
 - Vikrant Bhardwaj - 185007
