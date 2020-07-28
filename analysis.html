@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Analysis</title>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="topnav" style="padding-left: 3%;">
+			<a href="banker.html">Home</a>
+			<a class="active" href="analysis.html">Analysis</a>
+			<a href="complexity.html">Complexity</a>
+			<a href="about.html">About</a>
+		  </div>
+        <img id="logo" src="IMAGES/4.png" alt="Analysis" style="padding-left: 30%;"> <hr>
+        <div class="container">    
+        <p class="lead"> The analysis discusses deadlock problems that occur inside the computer and how the Banker’s  algorithm works in avoiding deadlocks and simulation processes that will run in the application. Exclusive access to resources by several processes within a computer is one example of a possible case for dealing with deadlock problems. Some processes can run at once and compete to get a loan of resources from a computer. Some examples include the process of printing documents with a printer, using a scanner, read / write with a floppy disk or CD / DVD-RW and other applications, such as photo editor applications and office applications.The processes that run on a computer require resources, in the form of memory to complete the execution of the process. This limited memory is borrowed from the operating system. In borrowing and using memory, the operating system allows for use and hold and wait conditions, where the process can request resources according to their needs at that time. When the process requires additional resources, the process can request new resources while using old resources. This process runs until it is finished and the process of returning all resources (borrowed) to the operating system. The resources that are being used by the process cannot be forcibly taken from the process (non-preemption condition), because it will cause the terminate process and the process must be repeated (reset / restart) again from the beginning.The process of borrowing demand and the simultaneous use of resources by the process will cause a situation, where the operating system no longer has the available resources, while the processes, which are using and using resources, still need additional resources to completeexecution. In this situation, all processes will wait for each other and hope the other process is completed, so that additional resources are available to be borrowed and used. Circularly waiting for each other this condition is also called circular wait condition. As a result, all processes cannot run and deadlocks occur.One way to avoid deadlock known in the science of Operating Systems is to use the Banker’s Algorithm.</p>
+        </div>
+        <hr>><br>
+        <img src="IMAGES/6.jpg" height="50px" width="100%">
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Banker's Algorithm</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="style.css">
+		<!-- <link rel="stylesheet" href="st.css"> -->
+        <script type="text/javascript" src="banker.js"></script>
+    </head>
+    <body>
+        <div class="topnav" style="padding-left: 3%;">
+			<a class="active" href="#home">Home</a>
+			<a href="analysis.html">Analysis</a>
+			<a href="complexity.html">Complexity</a>
+			<a href="about.html">About</a>
+		  </div>
+        <br>
+        <div class="container">
+					<img id="logo" src="IMAGES/logo.png" alt="Banker's Algorithm" style="padding-left: 25%;"> <hr>
+                    <p class="lead">Detection algorithm to avoid deadlock</p>
+                    <hr class="my-4">
+                    <p>Banker's Algorithm is a resource allocation and deadlock avoidance algorithm that tests for safety by simulating the allocation of predetermined maximum possible amounts of all resources, and then makes an "safe-state" check to test for possible deadlock conditions for all other pending activities, before deciding whether allocation should be allowed to continue.</p>
+                </div>
+					<form name = "resource"">
+			            <div class = "form-group" style="margin-left:400px; float:left;">
+						<label>Number of Resource types:</label><input class="form-control" type="Number" onkeyup="BuildFormFields(parseInt(this.value, 10));" />
+						<div id="FormFields" ></div>
+			            </div>
+					</form>
+			        <form name = "Need">
+			            <div class = "form-group" style="margin-left:40px;float:left;">
+						<label>Number of Processes:</label> <input class="form-control" type="Number" onkeyup="BuildFormFields2(y = parseInt(this.value, 10));" />
+						<div id="FormFields1"></div>
+						</div>
+					</form>
+					 <form name = "Alloc">
+			             <div class = "form-group" style="margin-left:50px;float:left;margin-top:60px;">
+						<div id="FormFields2"></div>
+			            </div>
+					</form>
+
+					<table id="tab_need" class="table table-hover table-sm">
+
+					</table>
+
+			        <table id="tab_alloc" class="table table-hover table-sm">
+
+
+					</table>
+
+			        <ul id = "printing"" >
+
+			        </ul>
+		        </div>
+				<div class="panel-footer">
+					<button class="btn btn-primary btn-success " style="margin-left: 900px;" onclick="banker()">Run</button>
+					<hr>
+		        </div>
+			</div>
+	</body>
+</html>
