@@ -15,7 +15,7 @@ After the allocation of resources, the new state formed may or may not be a safe
 
 **Safe state:** A safe state is a state in which all the processes can be executed in some arbitrary order with the available resources such that no deadlock occurs.
     1. If it is a safe state, then the requested resources are allocated to the process in actual.
-    2. If the resulting state is an unsafe state then it rollbacks to the previous state and the process is asked to wait longer.
+    2. If the resulting state is an unsafe state then it rollbacks to the previous state and the process is asked to wait longer.</br>
     3. 
 **Safety Algorithm**
 The safety algorithm is applied to check whether a state is in a safe state or not.
